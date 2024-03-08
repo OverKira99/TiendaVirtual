@@ -5,10 +5,10 @@
     <string name="descripcion">Descripcion</string>
     <string name="precio">precio</string>
     <string name="url_imagen">Url Imagen</string>
-    <string name="ingrese_la_descripcion_del_producto">Ingrese la descripcion del producto</string>
     <string name="digite_la_descripcion">Digite la descripcion</string>
     <string name="ingrese_el_precio">Ingrese el Precio</string>
     <string name="ingrese_la_url">Ingrese la Url</string>
+    <string name="agregar">Agregar</string>
 
 
 </resources>
