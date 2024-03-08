@@ -2,7 +2,7 @@ package com.alejandrobeltran.tiendavirtual;
 
 //POJO
 public class Product {
-
+//objeto
     private String name;
     private String description;
     private Double price ;
