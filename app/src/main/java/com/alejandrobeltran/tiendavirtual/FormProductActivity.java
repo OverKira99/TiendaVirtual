@@ -60,8 +60,6 @@ public class FormProductActivity extends AppCompatActivity {
                     return;
                 }
                 Product myNewProcut = new Product("Computador" , "descripcion" , 5000.0, "no hay");
-
-
                 Toast.makeText(FormProductActivity.this, "Pulso el boton", Toast.LENGTH_SHORT).show();
             }
         });
