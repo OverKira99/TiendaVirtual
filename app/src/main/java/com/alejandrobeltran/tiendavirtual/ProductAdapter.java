@@ -11,44 +11,46 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class ProductAdapter  extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
-
+public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
     private ArrayList<Product> listObjets;
+
     public ProductAdapter(ArrayList<Product> listObjets) {
         this.listObjets = listObjets;
     }
+
     @NonNull
     @Override
     public ProductAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         View myView = LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.item_product, parent,false);
+                .inflate(R.layout.item_product, parent, false);
         return new ViewHolder(myView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ProductAdapter.ViewHolder holder, int position) {
-
+        holder.associate(listObjets.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listObjets.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView myImage;
         private TextView nameProduct, priceProduct;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             myImage = itemView.findViewById(R.id.iv_product);
             nameProduct = itemView.findViewById(R.id.tv_name_product_item);
             priceProduct = itemView.findViewById(R.id.tv_name_price_item);
+        }
 
-
-
+        public void associate(Product myProduct) {
+            nameProduct.setText(myProduct.getName());
+            priceProduct.setText(myProduct.getPrice().toString());
         }
     }
 }
