@@ -5,22 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <com.google.android.material.appbar.AppBarLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:liftOnScroll="true">
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/top_app_bar_list_product"
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            style="?attr/collapsingToolbarLayoutMediumStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="?attr/actionBarSize"
-            app:layout_scrollEffect="compress"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:menu="@menu/app_top_bar"
-            app:navigationIcon="@drawable/ic_account"
-            app:title="@string/bienvenidos" />
-    </com.google.android.material.appbar.AppBarLayout>
-    <!-- Note: A RecyclerView can also be used -->
+            android:layout_height="?attr/collapsingToolbarLayoutMediumSize"
+            app:contentScrim="@color/md_theme_dark_inverseSurface"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/top_app_bar_list_product"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:menu="@menu/app_top_bar"
+                app:title="@string/bienvenidos">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_home_user"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_launcher_background"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:layout_margin="8dp"
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout><!-- Note: A RecyclerView can also be used -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
