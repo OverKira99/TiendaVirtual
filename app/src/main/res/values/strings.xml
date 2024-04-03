@@ -14,6 +14,10 @@
     <string name="bienvenidos">BIENVENIDOS</string>
     <string name="agregar_producto">Agregar Producto</string>
     <string name="agregar_categoria">Agregar Categoria</string>
+    <string name="nombre">Nombre:</string>
+    <string name="ropa">Ropa</string>
+    <string name="color">Color:</string>
+    <string name="categorias">Categorias</string>
 
 
 </resources>

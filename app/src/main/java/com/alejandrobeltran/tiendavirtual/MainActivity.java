@@ -32,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         loadFakeData();
+
         userImageProfile = findViewById(R.id.iv_profile_home_user);
         Picasso.get().load(userSession.getUrlImageProfile()).into(userImageProfile);
+
         topAppBar = findViewById(R.id.top_app_bar_list_product);
         rvProductsMain = findViewById(R.id.rv_products_main);
         ProductAdapter myAdapter = new ProductAdapter(listProducts);
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, FormProductActivity.class));
                     return true;
                 } else if (menuItem.getItemId() == R.id.item_add_category) {
-                    Toast.makeText(MainActivity.this, "Click en add category", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, CategoryActivity.class));
                     return true;
                 }
                 return false;
