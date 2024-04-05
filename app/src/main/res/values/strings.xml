@@ -18,6 +18,7 @@
     <string name="ropa">Ropa</string>
     <string name="color">Color:</string>
     <string name="categorias">Categorias</string>
+    <string name="agregar_categoria1">Agregar Categoria</string>
 
 
 </resources>

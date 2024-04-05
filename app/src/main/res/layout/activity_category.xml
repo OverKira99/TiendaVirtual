@@ -37,14 +37,14 @@
         </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/btn_agregar_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:contentDescription="Agregard"
-        android:text="Agregar"
+        android:contentDescription="Agregar"
+        android:text="@string/agregar_categoria1"
         app:icon="@android:drawable/ic_menu_add" />
 
 

@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Picasso.get().load(userSession.getUrlImageProfile()).into(userImageProfile);
 
         topAppBar = findViewById(R.id.top_app_bar_list_product);
+
         rvProductsMain = findViewById(R.id.rv_products_main);
         ProductAdapter myAdapter = new ProductAdapter(listProducts);
         rvProductsMain.setAdapter(myAdapter);

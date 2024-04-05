@@ -1,6 +1,6 @@
 package com.alejandrobeltran.tiendavirtual;
 
-import android.widget.ImageView;
+import android.content.res.ColorStateList;
 
 public class Category {
 
@@ -26,7 +26,7 @@ public class Category {
         this.nameCategory = nameCategory;
     }
 
-    public String getColorCategory() {
+    public ColorStateList getColorCategory() {
         return colorCategory;
     }
 

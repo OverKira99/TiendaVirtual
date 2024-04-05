@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
@@ -30,7 +31,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CategoryAdapter.ViewHolder holder, int position) {
         holder.associate(listCategory.get(position));
     }
 
@@ -42,16 +43,19 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView myImage;
         private TextView nameCategory;
+        private CardView cvColor;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             myImage = itemView.findViewById(R.id.iv_image_category);
             nameCategory = itemView.findViewById(R.id.tv_category_name);
+            cvColor =itemView.findViewById(R.id.cv_color_category);
 
         }
 
         public void associate(Category myCategory) {
             nameCategory.setText(myCategory.getNameCategory());
+            cvColor.setCardBackgroundColor(myCategory.getColorCategory());
             Picasso.get().load(myCategory.getIconCategory()).into(myImage);
         }
     }
