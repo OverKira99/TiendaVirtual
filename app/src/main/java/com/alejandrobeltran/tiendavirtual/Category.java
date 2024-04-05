@@ -1,7 +1,5 @@
 package com.alejandrobeltran.tiendavirtual;
 
-import android.content.res.ColorStateList;
-
 public class Category {
 
 
@@ -26,7 +24,8 @@ public class Category {
         this.nameCategory = nameCategory;
     }
 
-    public ColorStateList getColorCategory() {
+    public String getColorCategory() {
+        this.colorCategory=nameCategory;
         return colorCategory;
     }
 

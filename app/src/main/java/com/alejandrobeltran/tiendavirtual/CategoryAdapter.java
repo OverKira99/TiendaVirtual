@@ -55,7 +55,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         public void associate(Category myCategory) {
             nameCategory.setText(myCategory.getNameCategory());
-            cvColor.setCardBackgroundColor(myCategory.getColorCategory());
+           // cvColor.setCardBackgroundColor(Integer.parseInt(myCategory.getColorCategory()));
             Picasso.get().load(myCategory.getIconCategory()).into(myImage);
         }
     }

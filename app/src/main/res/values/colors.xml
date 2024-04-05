@@ -3,11 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="seed">#ff9900</color>
-    <color name="Green">#64FF33</color>
-    <color name="Red">#D51916</color>
-    <color name="Blue">#1337A5</color>
-    <color name="Yellow">#DDE924</color>
-    <color name="Lil">#D124E9</color>
+    <color name="electronica">#64FF33</color>
+    <color name="ropa_y_moda">#D51916</color>
+    <color name="hogar_y_jardin">#1337A5</color>
+    <color name="salud_y_belleza">#DDE924</color>
+    <color name="deportes_y_aire_libre">#D124E9</color>
     <color name="md_theme_light_primary">#8A5100</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
     <color name="md_theme_light_primaryContainer">#FFDCBD</color>

@@ -19,6 +19,11 @@
     <string name="color">Color:</string>
     <string name="categorias">Categorias</string>
     <string name="agregar_categoria1">Agregar Categoria</string>
+    <string name="seleccionar_color">Seleccionar_Color</string>
+    <string name="add_categorias">Añadir Categorias</string>
+    <string name="crear_categoria">Crear Categoria</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="agregar11">Agregar</string>
 
 
 </resources>

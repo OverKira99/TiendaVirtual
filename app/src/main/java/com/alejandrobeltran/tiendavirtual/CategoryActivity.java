@@ -10,7 +10,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -19,7 +21,7 @@ public class CategoryActivity extends AppCompatActivity {
 
     private ArrayList<Category> listCategory = new ArrayList<>();
     private RecyclerView rvCategorys;
-    private FloatingActionButton ft_agregar_category;
+   ;
     private Category iconCategory = new Category();
 
     @Override
@@ -29,10 +31,13 @@ public class CategoryActivity extends AppCompatActivity {
         loadFakeDataCategory();
 
         rvCategorys = findViewById(R.id.rv_category_main);
-        CategoryActivity myAdapterCategory = new CategoryActivity(listCategory);
+        CategoryAdapter myAdapterCategory = new CategoryAdapter(listCategory);
         rvCategorys.setAdapter(myAdapterCategory);
 
-        ft_agregar_category = findViewById(R.id.btn_agregar_category);
+        StaggeredGridLayoutManager myStagedCategory = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
+        rvCategorys.setLayoutManager(myStagedCategory);
+
+        ExtendedFloatingActionButton ft_agregar_category = findViewById(R.id.btn_agregar_category);
         ft_agregar_category.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

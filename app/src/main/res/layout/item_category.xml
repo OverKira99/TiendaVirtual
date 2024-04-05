@@ -54,7 +54,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:layout_weight="10"
-                android:backgroundTint="@color/Green"
+                android:backgroundTint="@color/electronica"
                 app:cardCornerRadius="12dp" />
         </LinearLayout>
     </LinearLayout>
