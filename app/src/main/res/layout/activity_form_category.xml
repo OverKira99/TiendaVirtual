@@ -18,7 +18,7 @@
 
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/top_app_bar_list_product"
+            android:id="@+id/top_app_bar_list_category"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:minHeight="?attr/actionBarSize"
